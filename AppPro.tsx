@@ -29,17 +29,17 @@ function AppPro(): JSX.Element {
   return (
     <View style={styles.container}>
       <Text style={styles.textSize}>Alert Me</Text>
-           <SafeAreaView>
-      <TextInput
-      onChangeText={onChangeNumber}
-        style={styles.input}
-        maxLength={40}
-        placeholder="Sri Lanka ID Number / Passport Number"
-        value={number}
-        keyboardType="numeric"
-        autoFocus={true}
-      />
-      <TextInput style={styles.input} maxLength={40} placeholder="Password" />
+      <SafeAreaView>
+        <TextInput
+          onChangeText={onChangeNumber}
+          style={styles.input}
+          maxLength={40}
+          placeholder="Sri Lanka ID Number / Passport Number"
+          value={number}
+          keyboardType="numeric"
+          autoFocus={true}
+        />
+        <TextInput style={styles.input} maxLength={40} placeholder="Password" />
       </SafeAreaView>
       <Pressable style={styles.button}>
         <Text style={styles.button}>LOG IN</Text>
@@ -69,7 +69,8 @@ const styles = StyleSheet.create({
     flex: 1,
     alignItems: 'center',
     position: 'relative',
-    marginTop: 55,
+    
+    backgroundColor: '#ff0000', //crimson color
   },
   whiteText: {
     color: '"#FFFFFF"',
@@ -79,7 +80,7 @@ const styles = StyleSheet.create({
   },
   textSize: {
     fontSize: 47,
-    color: 'black',
+    color: '#afeeee',
     justifyContent: 'center',
     fontWeight: 'bold',
   },
@@ -90,17 +91,18 @@ const styles = StyleSheet.create({
     paddingVertical: 8,
     paddingHorizontal: 32,
     borderRadius: 15,
-    backgroundColor: '#2a9d8f',
+    backgroundColor: '#0000ff',
     fontSize: 20,
-    color: 'black',
+    color: '#f5fffa',
     fontWeight: 'bold',
     width: 250,
     textAlign: 'center',
   },
   text: {
-    color: 'black',
+    color: '#f5f5f5',
     fontWeight: 'bold',
-    padding: 2,
+    padding: 6,
+    
   },
   input: {
     height: 55,
@@ -109,24 +111,27 @@ const styles = StyleSheet.create({
     borderWidth: 3,
     borderRadius: 15,
     padding: 20,
+    color:'white',
+    fontWeight:'bold',
+    backgroundColor:'white'
   },
   earlywarning: {
-    fontSize: 16,
+    fontSize: 18,
     fontWeight: 'bold',
-    color: 'black',
-    padding: 3,
+    color: '#fff8dc',
+    padding: 9,
   },
   earlywarning2: {
     fontSize: 16,
     fontWeight: 'bold',
-    color: 'red',
+    color: 'white',
     paddingRight: -50,
   },
   allright: {
     fontSize: 16,
     fontWeight: 'bold',
-    color: '#003566',
-    padding: 15,
+    color: '#f5f5f5',
+    padding: 50,
   },
 });
 export default AppPro;
