@@ -111,7 +111,7 @@ const styles = StyleSheet.create({
     borderWidth: 3,
     borderRadius: 15,
     padding: 20,
-    color:'white',
+    color:'Black',
     fontWeight:'bold',
     backgroundColor:'white'
   },
