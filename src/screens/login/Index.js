@@ -6,7 +6,7 @@ export default function Login({navigation}) {
     <View style={{flex: 1, alignItems: 'center', justifyContent: 'center'}}>
       <Text>Login</Text>
       <TouchableOpacity
-        onPress={() => navigation.navigate('Home')}
+        onPress={() => navigation(Home)}
         style={styles.button}>
         <Text style={{color: 'white'}}>Move</Text>
       </TouchableOpacity>
